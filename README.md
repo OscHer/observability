@@ -1,4 +1,4 @@
-*# Observability
+# Observability
 
 Repositorio para formación en observability sobre sistemas GNU/Linux.
 
