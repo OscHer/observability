@@ -1,4 +1,4 @@
-# Observability
+*# Observability
 
 Repositorio para formación en observability sobre sistemas GNU/Linux.
 
@@ -9,7 +9,7 @@ Repositorio para formación en observability sobre sistemas GNU/Linux.
 
 ## Componentes
 ### Máquinas virtuales
-* **Truman**:** Red Hat Enterprise Linux observada
+* **Truman:** Red Hat Enterprise Linux observada
 * **Christof:** Colector de información
 
 ## Dependencias
