@@ -41,3 +41,5 @@ Hará de bastión simulando ser una plataforma cloud genérica.
 
 
 ## Apéndices
+### Dotfiles
+* [dotfiles/vimrc](dotfiles/vimrc)
