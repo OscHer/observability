@@ -7,6 +7,12 @@ Vagrant.configure("2") do |config|
   config.vm.define "seahaven" do |seahaven|
     seahaven.vm.box = "debian/bullseye64"
     seahaven.vm.hostname = "seahaven"
+
+    # Aprovisionamiento con ansible local
+    seahaven.vm.provision "preprovision", type: "ansible_local" do |preprovision|
+      preprovision.install_mode = "default"
+      preprovision.playbook = "provision/ansible/preprovision.yml"
+    end
   end
 
   # Truman: nodo observado (sutil, verdad?)
