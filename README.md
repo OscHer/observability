@@ -22,9 +22,12 @@ Nodo RHEL 8 que hará las veces de colector de métricas varias:
 
 ### Seahaven
 Servidor Debian Bullseye desde el que lanzaremos los playbooks.
-Sobre este nodo ejecutaremos un script de pre-aprovisionamiento para evitar
-incompatibilidades de Vagrant con Virtualbox y he decidido atacar a bajo nivel
-desde un shell script.
+El objetivo con **seahaven** es simular un entorno independiente a la plataforma
+final sobre la que ejecutaremos nuestros playbooks de aprovisionamiento. La 
+*Definition of Ready* vendrá determinada por la encapsulación completa y portable
+del directorio *platform* y su contenido al completo; es decir, dentro de dicho
+directorio deberíamos poder gestionar un repositorio de git independiente al
+resto de IaC.
 
 ### Truman
 Nodo RHEL 8 que enviará todo tipo de métricas a Christof.
