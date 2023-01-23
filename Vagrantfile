@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
     seahaven.vm.provision "preprovision", type: "ansible_local" do |preprovision|
       preprovision.install_mode = "default"
       preprovision.playbook = "provision/ansible/preprovision.yml"
+      #preprovision.verbose = "vv" # Nivel de verbosidad. Ver README.md en sección debug.
     end
   end
 

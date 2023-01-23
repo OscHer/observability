@@ -1,0 +1,14 @@
+---
+- name: You're in vagrant-platform.yml
+  debug:  
+    msg: 
+    - "This is vagrant_ansible_inventory: {{ vagrant_ansible_inventory }}"
+    - "This is platform_root_dir: {{ platform_root_dir }}"
+    verbosity: 1
+
+- name: Creating inventory
+  copy:
+    mode: '0444' 
+    dest: '{{ platform_root_dir }}'
+    remote_src: true # Necesitamos este valor por defecto para evitar malentendidos
+    src: '{{ vagrant_ansible_inventory }}'

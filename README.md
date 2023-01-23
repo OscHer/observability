@@ -2,7 +2,15 @@
 
 Repositorio para formación en observability sobre sistemas GNU/Linux.
 
-## Tecnologías que usaremos
+## Funcionamiento
+Se trata de una aplicación completa modelizada con filosofía DevOps y Cloud-agnostic.
+### Instalación en local 
+#### Dependencias
+* [Virtualbox >= 6.1](https://www.virtualbox.org/wiki/Downloads) o [KVM/Qemu](https://www.qemu.org/download/)
+* [Vagrant >= v2.3.4](https://developer.hashicorp.com/vagrant/downloads)
+
+
+### Tecnologías usadas
 * Rsyslog
 * logrotate
 * Ansible
@@ -38,9 +46,6 @@ Nodo RHEL 8 que enviará todo tipo de métricas a Christof.
 
 Hará de bastión simulando ser una plataforma cloud genérica.
 
-## Dependencias
-* Virtualbox o KVM/Qemu
-* Vagrant >= 2.3.4
 
 
 ## Apéndices
