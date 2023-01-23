@@ -1,12 +1,11 @@
 ---
 - hosts: seahaven
   become: yes
+  vars_files:
+    - includes/vars.yml
   tasks:
     - name: Is alive
       ping:
 
     # TODO-oscar: refactor this intro a role structure if it suits
     - include: includes/vagrant-platform.yml  
-      vars:
-        vagrant_ansible_inventory: /tmp/vagrant-ansible/inventory/vagrant_ansible_local_inventory  
-        platform_root_dir: my_platform_root_dir 

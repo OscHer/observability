@@ -9,6 +9,6 @@
 - name: Creating inventory
   copy:
     mode: '0444' 
-    dest: '{{ platform_root_dir }}'
+    dest: '{{ platform_root_inventory }}'
     remote_src: true # Necesitamos este valor por defecto para evitar malentendidos
     src: '{{ vagrant_ansible_inventory }}'
