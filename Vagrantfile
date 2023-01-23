@@ -14,6 +14,8 @@ Vagrant.configure("2") do |config|
       preprovision.playbook = "provision/ansible/preprovision.yml"
       #preprovision.verbose = "vv" # Nivel de verbosidad. Ver README.md en sección debug.
     end
+
+    seahaven.vm.synced_folder "platform", "/opt/platform/"
   end
 
   # Truman: nodo observado (sutil, verdad?)
